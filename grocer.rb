@@ -1,13 +1,5 @@
 def find_item_by_name_in_collection(name, collection)
-
-  #collection.each do |items_hash| 
-   # items_hash.each do |key, value|
-    #    if value == name 
-     #       return items_hash
-      #  end
-    #end 
-#  end 
- # return nil 
+  
  counter = 0 
  
  while counter < collection.length 
@@ -79,15 +71,6 @@ def apply_clearance(cart)
 end
 
 def checkout(cart, coupons)
-  # Consult README for inputs and outputs
-  #
-  # This method should call
-  # * consolidate_cart
-  # * apply_coupons
-  # * apply_clearance
-  #
-  # BEFORE it begins the work of calculating the total (or else you might have
-  # some irritated customers
   consolidate_cart = consolidate_cart(cart)
   couponed_cart = apply_coupons(consolidate_cart, coupons)
   final = apply_clearance(couponed_cart)
